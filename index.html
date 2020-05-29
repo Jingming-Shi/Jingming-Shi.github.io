@@ -1,8 +1,306 @@
-<p>Hello 大家好</p>
-<p>我是石景明，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<ul>
-  <li> <a href="https://weibo.com/u/1529148323?topnav=1&wvr=5&display=0&retcode=6102&is_all=1">微博</a> </li>
+<!--1-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head><meta http-equiv="Content-Type" content="text/x-component; charset=UTF-8" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+ <!--   <meta name="viewport" content="width=684" />-->
+    <title>CALYPSO - An Efficient Structure Prediction Method and Computer Software</title>
+	<meta name="description" content="CALYPSO, calypso, structure prediction, crystal structure prediction, metadynamcs, uspex, vasp, pwscf, quantum-espresso, siesta, molcular dynamics, high pressure" />
+	<meta name="keywords" content="CALYPSO, calypso, structure, predicton, structure predition, crystal structure prediction, molecular dynamics, high pressure" />
+    	<link rel="stylesheet" href="css/global.css">
 
-</ul>
+    	<link type="/images/x-icon" rel="shortcut icon" href="/images/favicon.ico" />
+    	<link type="/images/x-icon" rel="shortcut icon" href="/images/favicon.png" />
+<!--	<style type="text/css">
+	p{text-indent: 2em;}
+	</style>-->
+	<script src="/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 3000,
+				pause: 1500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+    
+   </head>
+   
+
+   <body>
+<div style="width:1000px; left:50%; margin:0px 0 0 -500px; position:absolute;">
+<!--  <div style="width:80%; margin-left:10%;margin-right:10%;"> -->
+
+     <div id="header" style="width: 1000px; height: 182px;" >
+     	<div id="bl" style="width: 20px; height: 182px; float: left; background-image: url(images/bnl.png);"></div>
+     	<div id="bm" style="width: 960px; height: 182px; float: left; background-image: url(images/bnm.png);"></div>
+     	<div id="br" style="width: 20px; height: 182px; float: left; background-image: url(images/bnr.png);"></div>
+     </div>
+     <div id="logo" style="width: 319px; height: 156px; position: absolute; left: 36px; top: 14px; background-image: url(images/CALYPSO_LOGO.png);"></div>
+
+     <div id="bice" style="width: 282px; height: 170px; position: absolute; left: 668px; top: 5px; background-image: url(images/bice.png);"></div>
+     
+     <div id="wzz" style="width: 469px; height: 59px; position: absolute; left: 475px; top: 110px; background-image: url(images/wzzz.png);"></div>
+     
+     <div id="leftb" style="width: 200px; height: 738px; position: absolute; left: 0; top: 202px;">
+	     <div id="lb1" style="width: 200px; height: 22px; float: left; background-image: url(images/lb1.png);"></div>
+	     <div id="lb2" style="width: 200px; height: 694px; float: left; background-image: url(images/lb2.png);"></div>
+	     <div id="lb3" style="width: 200px; height: 22px; float: left; background-image: url(images/lb3.png);"></div>
+     </div>
+     
+	  <div id="blank" style=" width: 1000px; height: 20px; float:left">
+ 	     <p></p>
+    </div>
+   <div id="menu" style="width:200px; height: 780px;float:left;" ></div>
+   	 <div id="menu" style="width:200px; height: 780px;float:left; position: absolute; left: 0px; top: 202px;" > 
+	   	 <center>	
+			<div id="blank" style="width: 200px; height: 10px;"></div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+			<!--	<a class="buttok" style="color: #F4B477; text-decoration: none;" href="/">Home</a>-->
+			<a class="butt selected" href="/">Home</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/success-stories">Success Stories</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/getting-calypso">Getting CALYPSO</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/releasenotes">Release Notes</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/documentation">Documentation</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/publications">Publications</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/cdg">Developers Group</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/forum">Forum</a>
+			</div>
+			<div id="butt1" style="width: 200px; height: 80px; line-height: 80px;" >
+				<a class="butt" href="/workshop">Workshop</a>
+			</div>
+<!--	   	 <div id="butt1" style="width: 200px; height: 100px; line-height: 100px;" >
+	   	 	<a class="butt" href="#">About</a>
+	   	 </div>-->
+	   	 </center>
+   	 </div>
+   	 <div id="map" style="width: 200px; float: left; position: absolute; left: 0px; top: 970px;">
+   	 <center>
+		<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://www.calypso.cn', 'user' : 1165010, 'server' : '3', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2015-07-01', 'lang' : 'zh', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www3.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www3.clustrmaps.com/user/e3e11c6d2"><img src="http://www3.clustrmaps.com/stats/maps-no_clusters/www.calypso.cn-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+        <!--<div id="clustrmaps-widget"></div><script type="text/javascript">var _clustrmaps = {'url' : 'http://www.calypso.cn', 'user' : 1059542, 'server' : '4', 'id' : 'clustrmaps-widget', 'version' : 1, 'date' : '2012-11-14', 'lang' : 'zh', 'corners' : 'square' };(function (){ var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www4.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);})();</script><noscript><a href="http://www4.clustrmaps.com/user/a0e102ad6"><img src="http://www4.clustrmaps.com/stats/maps-no_clusters/www.calypso.cn-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>-->
+   	 </center>
+   	 </div>
+   	 
+<!--   	 <div id="butt1" style="width: 193px; height: 90px; position: absolute; top: 220px; left: 8px;" >
+   	 	<img src="images/ss1.png" alt="" />
+   	 </div>
+   	 -->
+<!--   	 <div id="menublank" style="width:20px;float:left;">
+   	 </div>
+   	  <div id="blank" style=" width: 770px; height: 30px; float:left">
+	   	     <p></p>
+	  </div>
+   	  
+   	  <div id="blank2" style="float: right; width: 80px; height: 62px;"></div>
+   	  
+   	 <div id="blank" style=" width: 770px; height: 30px; float:left">
+   	  	     <p></p>
+   	 </div>-->
+   	 
+   	 <div id="release notes" class="ziceindex" style="float: right; margin-bottom: 20px;">
+   	 
+   	 <b class="ps2">New Release: CALYPSO 5.0 is ready! </b> (<a href="/releasenotes">See release notes</a>)
+   	 
+   	 
+   	 </div>
+
+   	  <div id="introduction" class="ziceindex" style="float: right;">
+   	<p><span class="ps2"><b>CALYPSO</b></span> (<b>C</b>rystal structure <b>A</b>na<b>LY</b>sis by <b>P</b>article <b>S</b>warm <b>O</b>ptimization) is an efficient structure prediction method and its same-name computer software. The approach requires only chemical compositions for a given compound to predict stable or metastable structures at given external conditions (e.g., pressure), thus the CALYPSO package can be used to predict/determine the crystal structure and design the multi-functional materials (e.g., superhard). The CALYPSO package is protected by the Copyright Protection Center of China with the registration No. 2010SR028200 and classification No. 61000-7500.
+   	</p>
+   	  	
+   	</div>
+   	<div id="blank" style=" width: 770px; height: 30px; float:left">
+   	 	     <p></p>
+   	</div>
+  	<div id="feature" class="ziceindex" style="float: right;">
+  	<p class="ps2" style="margin-bottom: 10px;">WHAT IS THE FEATURE?</p>
+  	
+  	  	<ol style="padding-left: 36px;">
+
+  	<li>Predictions of the energetically stable/metastable structures at given chemical compositions and external conditions (e.g., pressure) for clusters, 2D layers, surfaces, and 3D crystals.</li>
+  	<li>Design of novel functional materials, e.g., superhard materials.</li>
+  	<li>Options for the structural evolutions using global or local PSO.</li>
+  	<li>Structure searches with automatic variation of chemical compositions.</li>
+  	<li>Structure predictions with fixed cell parameters, or fixed space groups, or fixed molecules.</li>
+  	<li>CALYPSO is currently interfaced with VASP, CASTEP, Quantum Espresso, GULP, SIESTA and CP2K codes. The interface with other total energy codes can also be implemented by users' request.</li>
+  	</ol>
+  	</div>
+  	
+    <div id="blank" style=" width: 770px; height: 20px; float:left">
+  	     <p></p>
+  </div>
+  
+  <div id="majoar tech" class="ziceindex" style="float: right;">
+  <p class="ps2" style="margin-bottom: 10px;">Major Techniques Employed</p>
+  
+  <p>The success of CALYPSO method is on account of the integration of several major techniques:
+  
+  </p>
+  <ol style="padding-left: 36px;">
+  <li>Structural evolution through PSO algorithm. PSO is best-known for its ability to conquer large barriers of energy landscapes by making use of the swarm intelligence and by self-improving structures. Both global and local PSO algorithms have been implemented. The global PSO has the advantage of fast convergence, while local PSO is good at avoiding premature convergence and thus enhance the capability of CALYPSO in dealing with more complex systems.</li>
+  <li>Symmetry constraints during structure generation to reduce searching space and enhance the structural diversity.</li>
+  <li>Structural characterization techniques to eliminate similar structures, define nonflying areas, enhance searching efficiency, and divide energy surfaces for local PSO searching.<br />
+  (i)	bond characterization matrix technique<br />
+  (ii)	atom-centered symmetrical function technique
+  </li>
+  <li>Introducing new structures per generation with controllable percentage to enhance structural diversity.</li>
+  <li>Interface to a number of local structural optimization codes varying from highly accurate DFT methods to fast semiempirical approaches that can deal with large systems. Local structural optimization enables the reduction of noise of energy surfaces and the generation of physically justified structures.</li>
+  </ol>
+  </div>	
+  
+    <div id="blank" style=" width: 1000px; height: 20px; float:left">
+  	     <p></p>
+  </div>
+  
+  <div id="whypso" class="ziceindex" style="float: right;">
+  <p class="ps2" style="margin-bottom: 10px;">Why PSO?</p>
+  <p style="margin-bottom: 10px;">As an unbiased global optimization method, particle swarm optimization (PSO) is inspired by the choreography of a bird flock and can be viewed as a distributed behavior algorithm that performs multidimensional search (see, e.g., Kennedy & Eberhart 1995). PSO is metaheuristic as it makes few or no assumptions about the solutions and can search very large spaces of candidate solutions (dubbed as particles) by moving them in the search-space based on efficient algorithms over the particle's position and velocity. </p>
+  
+  <p style="margin-bottom: 10px;">“In past several years, PSO has been successfully applied in many research and application areas. It is demonstrated that PSO gets better results in a faster, cheaper way compared with other methods.</p> 
+  <p style="margin-bottom: 10px;">Another reason that PSO is attractive is that there are few parameters to adjust. One version, with slight variations, works well in a wide variety of applications. PSO has been used for approaches that can be used across a wide range of applications, as well as for specific applications focused on a specific requirement.” </p>
+  <p style="text-align: right;">---- Thanks to http://www.swarmintelligence.org </p>
+  </div>
+  
+    <div id="blank" style=" width: 1000px; height: 20px; float:left">
+  	     <p></p>
+  </div>
+  
+  <div id="history" class="ziceindex" style="float: right;">
+  <p class="ps2" style="margin-bottom: 10px;">History of PSO on Structure Prediction</p>
+  <!-- <p style="margin-bottom: 10px;">Although PSO algorithm has been employed to various optimization problems, the application of PSO in structure prediction started only recently. It was first implemented into structure prediction for isolated systems (small clusters and molecules) by Call, Zubarev & Boldyrev in 2007. However, this first attempt did not lead to any practical application. </p>
+  <p style="margin-bottom: 10px;">The CALYPSO team independently initialized the idea of applying PSO algorithm in structure prediction in 2007 (Ma and Wang) and made the first application of PSO algorithm in structure prediction of extended systems (e.g., crystals by Wang, Lv, Zhu & Ma in 2010 and two-dimensional layers by Luo et al, in 2011 and Wang et al, in 2012). Recently, CALYPSO team (Lv, Wang, Zhu & Ma 2012) has made a significant step toward improving the structure searching efficiency on clusters by introducing several efficient techniques (e.g., bond characterization matrix for fingerprinting structures, symmetry constraints on structure generation, etc). </p> -->
+	  
+  <p style="margin-bottom: 10px">Although PSO algorithm has been employed to various optimization problems, the application of PSO in structure prediction started only recently. It was attempted for isolated systems (small clusters and molecules) by Call, Zubarev & Boldyrev in 2007. However, this effort did not lead to any practical application.</p>
+
+ <p style="margin-bottom: 10px">The CALYPSO team independently initialized the idea of applying PSO algorithm into structure prediction in 2006 (Ma and Wang) before Call et al’s work and made the first application of PSO algorithm into structure prediction of extended systems (e.g., 3D crystals by Wang, Lv, Zhu & Ma in 2010, 2D layers by Wang, Miao, et al, in 2012, 2D surface reconstruction by Lu et al, in 2014). Structure searching efficiencies of isolated systems have been substantially improved by the CALYPSO team (Lv, Wang, Zhu & Ma) in 2012, where the success of this application has been backed up with the introduction of various efficient techniques (e.g., bond characterization matrix for fingerprinting structures, symmetry constraints on structure generation, etc.).</p>
+
+  <p style="margin-bottom: 10px;">The CALYPSO method, packed with the PSO algorithm and many enhancement techniques, is successful in solving numerous structural problems. As a result, CALYPSO has received world-wide attention. Till the middle of 2018, there are more than 2200 registered users of CALYPSO, distributed over 59 different countries. In only 8 years, the success of CALYPSO code has been recorded in over 610 high-profile publications, including a number of papers in Nat. Chem., Nat. Commun., PNAS, PRL, JACS, Angew. Chem. Int. Edit., etc. </p>
+  </div>
+  
+    <div id="blank" style=" width: 1000px; height: 20px; float:left">
+  	     <p></p>
+  </div>
+  
+     	  
+   <div id="getting" style="float: right;">
+   <a href="/getting-calypso">
+   	<img src="images/gettingcalypso.png" alt="getting" /></a>
+   </div>
+  
+  
+  <div id="fg" style="width: 770px;float: right;">
+  	   	  <center>
+  	   	  <div id="example" style="float: ">
+  			<div id="slides" >
+  				<div class="slides_container">
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s1.jpg" width="570" height="270" alt="Slide 1"></a>
+  						<div class="caption" style="bottom:0">
+  							<p>Superconductive "sodalite"-like clathrate calcium hydride at high pressures</p>
+  						</div>
+  					</div>
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s2.jpg" width="570" height="270" alt="Slide 2"></a>
+  						<div class="caption">
+  							<p>High pressure partially ionic phase of water ice</p>
+  						</div>
+  					</div>
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s3.jpg" width="570" height="270" alt="Slide 3"></a>
+  						<div class="caption">
+  							<p>Spiral chain O<sub>4</sub> form of dense oxygen</p>
+  						</div>
+  					</div>
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s4.jpg" width="570" height="270" alt="Slide 4"></a>
+  						<div class="caption">
+  							<p>Novel Superhard Carbon: C-Centered Orthorhombic C<sub>8</sub></p>
+  						</div>
+  					</div>
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s5.jpg" width="570" height="270" alt="Slide 5"></a>
+  						<div class="caption">
+  							<p>Predicting Two-Dimensional Boron-Carbon Compounds by the Global Optimization Method</p>
+  						</div>
+  					</div>
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s6.jpg" width="570" height="270" alt="Slide 6"></a>
+  						<div class="caption">
+  							<p>Three Dimensional Carbon-Nanotube Polymers</p>
+  						</div>
+  					</div>
+  					<div class="slide">
+  						<a href="/success-stories"><img src="img/s7.jpg" width="570" height="270" alt="Slide 7"></a>
+  						<div class="caption">
+  							<p>Predicted novel high-pressure phases of lithium</p>
+  						</div>
+  					</div>
+  				</div>
+  				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+  				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+  			</div>
+  <!--			<img src="img/example-frame.png" width="739" height="341" alt="Example Frame" id="frame">-->
+  		</div>
+  	   	  </center>
+     	  </div>
+     	  
+
+  <div id="blank" style=" width: 770px; height: 30px; float:left">
+   	     <p></p>
+  </div>
+  	
+	  <div class="zicefoot" id="footer" style="width: 1000px; text-align: center; float: left;">
+		 <!-- <hr/>-->
+		 <p> Copyright &copy; 2012 CALYPSO Developers Group </p>
+     <p><a href="http://www.miitbeian.gov.cn/" target="_blank">吉ICP备13004381</a></p>
+
+		  
+	  </div>
+ 
+   </body>
+</html>
+    
